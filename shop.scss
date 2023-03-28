@@ -1,0 +1,91 @@
+
+.price {
+    background-color: #0a1748;
+    color: white;
+    font-family: sans-serif;
+    padding: 50px;
+    text-align: center;
+    .heading{
+      display: grid;
+      justify-content: center;
+      text-align: center;
+    }
+    
+    p {
+      color: white;
+    }
+    .content {
+      display: grid;
+      background-color: #0a2252;
+      grid-template-columns: (repeat(3, 1fr));
+      max-width: 80%;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      .box {
+        padding: xl-4;
+        border-radius: 10px;
+        padding: 10px;
+        .Sub-list{
+         list-style: none;
+         text-align: left;
+        }
+      }
+      .box:nth-child(2) {
+        background: #0a2b52;
+        position: relative;
+        overflow: hidden;
+        &::after {
+          content: "POPULAR";
+          background: #bd3f99;
+          transform: rotate(45deg);
+          font-size: 15px;
+          padding: 5px;
+          text-align: center;
+        }
+      }
+  
+      h1 {
+        font-size: xl-6;
+        position: relative;
+        span {
+          font-size: lg;
+        }
+        label {
+          font-size: md;
+          color: text;
+        }
+      }
+      p {
+        color: text;
+      }
+      button {
+        margin: 50px 0;
+      }
+  
+      ul {
+        li {
+          margin-top: 30px;
+          i {
+            margin-right: 10px;
+          }
+        }
+      }
+    }}
+    button{
+      padding: 10px;
+      border-radius: 25px;
+      border: none;
+      background: linear-gradient(to right, red, orange);
+      outline: none;
+      color: white;
+      transition:all 0.5s;
+      font-family: sans-serif;
+      font-size: 15px;
+      cursor: pointer;
+      &:hover{
+        background:linear-gradient(to right, green,lightgreen);
+        scale: 1.05;
+      }
+    }
